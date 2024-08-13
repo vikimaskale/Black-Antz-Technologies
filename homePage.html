@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Load an icon library -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
-    <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-briefcase"></i> Internship</a>
-        <a href="#"><i class="fa fa-lightbulb-o"></i> Projects</a>
-        <a href="#"><i class="fa fa-phone"></i> Enquiry</a>
-      </div>
-    
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <div class="text-section">
+                <div class="company-name">BLACK ANTZ TECHNOLOGIES</div>
+                <div class="tagline">Insides Of Learning</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Internship</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        </ul>
+        <div class="contact">
+            <a href="#"><i class="fas fa-envelope"></i> Enquiry</a>
+            <div class="mobile-number">8197309550</div>
+        </div>
+    </nav>
 </body>
 </html>
-
-
-
