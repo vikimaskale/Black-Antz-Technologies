@@ -124,10 +124,6 @@ body {
   padding: 20px;
 }
 
-.left-section {
-  padding: 20px;
-}
-
 .contact-form {
   border: 2px solid black;
   border-radius: 10px;
@@ -137,7 +133,7 @@ body {
 
 .contact-form h2 {
   margin-bottom: 20px;
-  margin-left: 70px;
+  text-align: center;
 }
 
 .contact-form label {
@@ -171,7 +167,7 @@ body {
 }
 
 .contact-form button i {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .contact-form button:hover {
@@ -182,29 +178,88 @@ body {
   padding: 20px;
 }
 
+.courses-title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-analytics, .java-full-stack {
+  flex: 1;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.data-analytics h3, .java-full-stack h3 {
+  text-align: center;
+  background-color: black;
+  color: brown;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.icon-row a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.icon-row i {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons .demo-btn, .buttons .details-btn {
+  flex: 1;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.buttons .demo-btn:hover, .buttons .details-btn:hover {
+  background-color: #333;
+}
+
 footer {
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
 }
 
+footer h2 {
+  margin-bottom: 20px;
+}
+
 .client-logos {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.client-logos img {
-  margin: 10px;
-  height: 50px;
-}
-
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-  }
-
-  .left-section, .right-section {
-      max-width: 100%;
-  }
+  justify-content: space-around;
 }
