@@ -203,9 +203,9 @@ body {
 
 .data-analytics h3, .java-full-stack h3 {
   text-align: center;
-  background-color: black;
   color: brown;
   padding: 5px;
+  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -213,7 +213,7 @@ body {
 .icon-row {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .icon-row a {
