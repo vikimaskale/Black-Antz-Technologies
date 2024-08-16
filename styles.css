@@ -222,6 +222,10 @@ body {
   font-weight: bold;
 }
 
+.icon-row a:hover{
+  background-color: #ecf3feff;
+}
+
 .icon-row i {
   font-size: 30px;
   margin-bottom: 5px;
