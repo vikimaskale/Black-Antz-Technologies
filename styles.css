@@ -252,17 +252,84 @@ body {
   background-color: #333;
 }
 
-footer {
-  background-color: #f0f0f0;
+/* Footer Section */
+.footer-section {
+  border: 2px solid black;
   padding: 20px;
-  text-align: center;
+  position: relative;
+  background-color: white;
+  margin-top: 30px;
 }
 
-footer h2 {
-  margin-bottom: 20px;
+.footer-title {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 5px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .client-logos {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logos-container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.logo-item {
+  text-align: center;
+  flex-shrink: 0;
+  width: 120px;
+  margin: 0 30px;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.arrow-left, .arrow-right {
+  cursor: pointer;
+  font-size: 60px;
+  color: black;
+  padding: 10px;
+  user-select: none;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-section {
+      padding: 15px;
+  }
+
+  .footer-title {
+      font-size: 14px;
+  }
+
+  .logos-container {
+      width: 70%;
+  }
+
+  .logo-item {
+      width: 90px;
+      margin: 0 5px;
+  }
 }
