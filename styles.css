@@ -332,6 +332,43 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+      max-width: 100%;
+      padding: 20px 0;
+  }
+
+  .courses-title {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin: 20px auto;
+      text-align: center;
+  }
+
+  .course-details {
+      flex-direction: column;
+  }
+
+  .data-analytics{
+      max-width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .java-full-stack {
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+
   .footer-section {
       padding: 15px;
   }
