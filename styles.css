@@ -212,7 +212,7 @@ body {
 .icon-row {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .icon-row a {
@@ -222,14 +222,19 @@ body {
   font-weight: bold;
 }
 
+.icon-row a img {
+  width: 50px;  /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-bottom: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
 .icon-row a:hover{
   background-color: #ecf3feff;
 }
 
-.icon-row i {
-  font-size: 30px;
-  margin-bottom: 5px;
-}
+
 
 .buttons {
   display: flex;
