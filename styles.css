@@ -337,60 +337,66 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row; 
-    justify-content: space-between;
-    padding:10px 10px;
-    width: 100%;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    
   }
 
   .logo-section {
-    max-width: 15%; 
+    display: flex;
+    align-items: center;
+    width: 100%; /* Take full width */
+    margin-bottom: 10px; /* Add some space below */
   }
 
   .logo {
-    height: 40px; 
-  }
-
-  .company-name, 
-  .tagline {
-    font-size: 8px; 
+    height: 40px;
+    margin-right: 0px; /* Add some space to the right of the logo */
   }
 
   .text-section {
-    max-width: 100%;
+    flex: 1; /* Take up the remaining space */
+    max-width: 100%; /* Ensure text section takes full width */
+    text-align: center;
+  }
+
+  .company-name {
+    font-size: 12px; /* Decrease font size */
+  }
+
+  .tagline {
+    font-size: 10px; /* Decrease font size */
   }
 
   .nav-links {
-    display: flex;
-    flex-wrap: nowrap; 
-    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
   }
 
+
   .nav-links li {
-    margin: 0 10px; 
+    margin: 5px 10px; /* Adjust spacing */
   }
 
   .nav-links a {
-    font-size: 12px; 
+    font-size: 14px; /* Adjust font size */
     padding-bottom: 2px;
   }
 
-  .nav-links a i {
-    font-size: 14px; 
-    margin-right: 5px;
-  }
-
   .contact {
-    margin-right: 10px; 
+    margin-left: 0;
+    width: 100%;
   }
 
   .contact a {
-    font-size: 15px; /* Decrease font size of contact link */
-    margin-right: 5px;
+    font-size: 15px;
+    margin-bottom: 5px; /* Add some space below */
   }
 
   .mobile-number {
-    font-size: 15px; /* Decrease font size of mobile number */
+    font-size: 15px;
   }
 
   .container {
